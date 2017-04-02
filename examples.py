@@ -9,3 +9,8 @@ print "learning python is %s" % is_python #see that i have not used double quote
 grade1 = 'A'
 grade2 = "B"
 print "I have got %s in Math and %s in Geography" % (grade1, grade2) 
+
+anime = "Naruto"
+cool = "is awesome!"
+
+print anime + cool
