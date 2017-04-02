@@ -10,7 +10,7 @@ grade1 = 'A'
 grade2 = "B"
 print "I have got %s in Math and %s in Geography" % (grade1, grade2) 
 
-anime = "Naruto"
+anime = "Naruto "
 cool = "is awesome!"
 print anime + cool
 
@@ -33,3 +33,9 @@ print char5 + char6 + char7
 
 print char1 + char2 + char3 + char4,
 print char5 + char6 + char7
+
+array = "%r %r %r"
+print array %(1, 2, 3)
+print array %('one', 'two', 'three')
+print array %(array, array, array) #if you give only 2 arguments, it will not work
+print array %("You can even", "write", "sentences")
