@@ -12,5 +12,24 @@ print "I have got %s in Math and %s in Geography" % (grade1, grade2)
 
 anime = "Naruto"
 cool = "is awesome!"
-
 print anime + cool
+
+print "---------------------------------------" #just to create a partition
+
+print "I want %s" %'bananas' " They are %s" %"awesome"
+print "." * 39 #just learned this.
+
+char1 = "pa"
+char2 = "ra"
+char3 = 'no'
+char4 = 'id'
+
+char5 = "an"
+char6 = "dr"
+char7 = "oid"
+
+print char1 + char2 + char3 + char4  #see that the comma at the end of line 34 makes a difference
+print char5 + char6 + char7
+
+print char1 + char2 + char3 + char4,
+print char5 + char6 + char7
