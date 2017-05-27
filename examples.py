@@ -70,3 +70,7 @@ print "\a" #bell sound
 #       	print "%s\r" % i,             cool program to try!
 
 
+string1 = "Hello man!"
+string2 = "how are you?"
+
+print "I said %r " %string1, "%s" %string2
