@@ -74,3 +74,7 @@ string1 = "Hello man!"
 string2 = "how are you?"
 
 print "I said %r " %string1, "%s" %string2
+
+var1 = "Kya baat hain"
+
+print "Mast", var1 #see that i have not used %
