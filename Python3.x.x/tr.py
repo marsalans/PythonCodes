@@ -1,3 +1,6 @@
+import math
+
+
 def rev():
     str1 = "program"
     i = len(str1)
@@ -76,3 +79,26 @@ def listPrime():
                 break
         else:
             print(num)
+
+
+def primeFactors(val):
+    i = 2
+    pFactors = []
+    while i <= val:
+        while val % i == 0:
+            pFactors.append(i)
+            val = val / i
+        i += 1
+
+    return sorted(pFactors)
+
+
+def findLCM():
+    val1 = int(input("Enter 1st number: "))
+    val2 = int(input("Enter 2nd number: "))
+    ans = primeFactors(val1)
+    ans2 = primeFactors(val2)
+    print(str(ans) + " " + str(ans2))
+
+
+findLCM()
