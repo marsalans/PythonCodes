@@ -83,14 +83,21 @@ def listPrime():
 
 def primeFactors(val):
     i = 2
+    count = 0
     pFactors = []
+    powerVal = []
     while i <= val:
         while val % i == 0:
             pFactors.append(i)
             val = val / i
+            count += 1
+        if (count > 0):
+            powerVal.append(count)
+            count = 0
         i += 1
 
-    return sorted(pFactors)
+    # print(powerVal)
+    return sorted(set(pFactors)), powerVal
 
 
 def findLCM():
@@ -98,7 +105,8 @@ def findLCM():
     val2 = int(input("Enter 2nd number: "))
     ans = primeFactors(val1)
     ans2 = primeFactors(val2)
-    print(str(ans) + " " + str(ans2))
+    print(ans)
+    print(ans2)
 
 
 findLCM()
