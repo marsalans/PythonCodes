@@ -1,6 +1,3 @@
-import math
-
-
 def rev():
     str1 = "program"
     i = len(str1)
@@ -107,6 +104,8 @@ def findLCM():
     ans2 = primeFactors(val2)
     print(ans)
     print(ans2)
+    # for i, j in enumerate(zip(ans[0], ans2[0])):
+    #     print(i, j)
 
 
 findLCM()
